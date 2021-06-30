@@ -2243,7 +2243,7 @@
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .stackedit__left {
     grid-column: 1;
     grid-row: 1;
@@ -2251,7 +2251,7 @@
     position: sticky;
     width: 250px;
     height: 100%;
-    top: 0;
+    top: 20px;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
