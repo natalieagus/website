@@ -2244,8 +2244,8 @@
     display: none;
     width: 250px;
     height: 100%;
-    top: auto;
-    left: auto;
+    top: 100px;
+    left: 0;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
