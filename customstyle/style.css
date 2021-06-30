@@ -2240,8 +2240,9 @@
     border-radius: 3px;
   }
 
-  .container_row{
+  .content-container{
     display: grid;
+    padding: 30px;
   }
 
   .stackedit__left {
