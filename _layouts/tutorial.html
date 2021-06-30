@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+  
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      
+        {% assign page_is_article = false %}
+        {% if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
+      
+        {% assign page_title = "" %}
+        {% if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
+        {% if page.title %}
+          {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
+        {% else %}
+          {% assign page_title = site.title %}
+        {% endif %}
+      
+        {% assign page_description = "" %}
+        {% if page.draft %}{% assign page_description = page_description | append: "[DRAFT] " %}{% endif %}
+        {% if page.blurb %}
+          {% assign page_description = page_description | append: page.blurb %}
+        {% else %}
+          {% assign page_description = site.description %}
+        {% endif %}
+      
+        {% assign page_url = page.url | replace: "index.html","" | replace: ".html","" | prepend: site.baseurl | prepend: site.url %}
+      
+        {% assign page_image = site.og_image | prepend: site.baseurl | prepend: site.url %}
+        {% if page.og_image %}
+          {% assign page_image = site.url + page.og_image %}
+        {% endif %}
+      
+        {% for follow in site.footer.follow %}
+          {% if follow.name == 'Twitter' %}
+            {% assign twitter_username = follow.username %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      
+        <!-- Primary Meta Tags -->
+        <title>{{ page_title }}</title>
+        <meta name="title" content="{{ page_title }}"/>
+        <meta name="description" content="{{ page_description }}"/>
+      
+        <!-- Open Graph / Facebook -->
+        <meta property="og:site_name" content="{{ page_title }}"/>
+        <meta property="og:type" content="{% if page_is_article %}article{% else %}website{% endif %}"/>
+        <meta property="og:url" content="{{ page_url }}"/>
+        <meta property="og:title" content="{{ page_title }}"/>
+        <meta property="og:description" content="{{ page_description }}"/>
+        <meta property="og:image" content="{{ page_image }}"/>
+      
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="{{ page_url }}"/>
+        <meta property="twitter:title" content="{{ page_title }}"/>
+        <meta property="twitter:description" content="{{ page_description }}"/>
+        <meta property="twitter:image" content="{{ page_image }}"/>
+        {% if twitter_username %}
+          <meta property="twitter:creator" content="{{ twitter_username }}"/>
+          <meta property="twitter:site" content="{{ twitter_username }}"/>
+        {% endif %}
+      
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
+        <link rel="stylesheet" href="{{ "/customstyle/style.css" | absolute_url }}" />
+
+        <link rel="canonical" href="{{ page_url }}"/>
+        <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
+      
+        <!-- Google Analytics -->
+        <script>
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', "{{ site.google_analytics }}", "auto");
+          ga('send', "pageview");
+        </script>
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+      
+      </head>
+
+<body class="stackedit"></body>
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      {{#tocToHtml content.toc 2}}{{/tocToHtml}}
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      {{{ content }}}
+    </div>
+  </div>
+  {% include footer.html %}
+      
+  {% include foot.html %}
+</body>
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  >
+  </script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://vincenttam.github.io/javascripts/MathJaxLocal.js"
+  >
+  </script>
+
+<style>
+.blueborder{
+ border-style:solid;
+ border-color:#287EC7;
+ padding: 10px;
+}
+
+.redborder{
+ border-style:solid;
+ border-color:#FF0000;
+ padding: 10px;
+}
+
+
+.greenbox{
+background-color: #cfc ;
+padding: 10px; 
+border: 1px solid green;
+}
+
+.orangebox{
+background-color: #FFE4B5 ;
+padding: 10px; 
+border: 1px solid #FF8C00;
+}
+
+.redbox{
+    background-color: #FFE4E1;
+    border: 1px solid #FA8072;
+    display: block;
+    padding: 10px;
+}
+
+.bluebox{
+    background-color: #F0F8FF;
+    border: 1px solid #87CEFA;
+    display: block;
+    padding: 10px;
+}
+
+.yellowbox{
+    background-color: #FFFACD;
+    border: 1px solid #FFFF66;
+    display: block;
+    padding: 10px;
+}
+
+.redtext{
+	color:red;
+}
+
+.bluetext{
+	color:blue;
+}
+
+.orangetext{
+	color:#FF791A;
+}
+
+.greentext{
+	color:green;
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #efffef;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccffcc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #efffef;
+}
+</style>
+
+
+
+
+</html>
