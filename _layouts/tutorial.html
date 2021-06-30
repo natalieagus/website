@@ -84,7 +84,11 @@
 <body class="stackedit">
     <!-- {% include header.html %} -->
   <div class="stackedit__left">
-    {{#tocToHtml :toc 2}}{{/tocToHtml}}
+    <script>
+        function displayResult() {
+          document.getElementById("markdown-toc").innerHTML;
+        }
+        </script>
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
