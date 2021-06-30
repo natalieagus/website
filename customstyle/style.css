@@ -2240,7 +2240,7 @@
     border-radius: 3px;
   }
   .stackedit__left {
-    position: sticky;
+    /* position: sticky; */
     display: none;
     width: 250px;
     height: 100%;
