@@ -81,7 +81,8 @@
       
       </head>
 
-<body class="stackedit"></body>
+<body class="stackedit">
+    {% include header.html %}
   <div class="stackedit__left">
     <div class="stackedit__toc">
       {{#tocToHtml content.toc 2}}{{/tocToHtml}}
@@ -89,7 +90,7 @@
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
-      {{{ content }}}
+      {{ content }}
     </div>
   </div>
   {% include footer.html %}
