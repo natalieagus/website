@@ -66,4 +66,89 @@ $$\begin{aligned} \overline{(A+B)\overline{B}} &= \overline{A \overline{B} + B \
 <li> <strong>The contamination delay</strong> is the path  (from any input to any output)  that results in the shortest time: NR2 + NR2 + ND2 = $5 + 5 + 5 = 15$. <strong>The propagation delay</strong> is the path (from any input to any output) that results in the longest time: AN2 + NR2 + ND2 = $50 + 30 + 30 = 110$.</li></ol>
 </p></div>
 
+# Test Header 2
+lorem ipsum something something
+
+## Test Subheader 2
+This is math:
+
+$$\begin{matrix}
+x & y & z \\ 
+\hline 
+0 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \\ \hline \end{matrix}$$
+
+$$\begin{aligned}
+ab + \bar{a}c + bc &=  ab + \bar{a}c + (\bar{a}+a)bc\\
+&=ab + abc+ \bar{a}c + \bar{a}bc \\
+&= ab(1+c) + \bar{a}c (1+b)\\
+&=ab + \bar{a}c\end{aligned}$$
+
+# Test Header 2
+lorem ipsum something something
+
+## Test Subheader 2
+This is math:
+
+$$\begin{matrix}
+x & y & z \\ 
+\hline 
+0 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \\ \hline \end{matrix}$$
+
+$$\begin{aligned}
+ab + \bar{a}c + bc &=  ab + \bar{a}c + (\bar{a}+a)bc\\
+&=ab + abc+ \bar{a}c + \bar{a}bc \\
+&= ab(1+c) + \bar{a}c (1+b)\\
+&=ab + \bar{a}c\end{aligned}$$
+
+# Test Header 2
+lorem ipsum something something
+
+## Test Subheader 2
+This is math:
+
+$$\begin{matrix}
+x & y & z \\ 
+\hline 
+0 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \\ \hline \end{matrix}$$
+
+$$\begin{aligned}
+ab + \bar{a}c + bc &=  ab + \bar{a}c + (\bar{a}+a)bc\\
+&=ab + abc+ \bar{a}c + \bar{a}bc \\
+&= ab(1+c) + \bar{a}c (1+b)\\
+&=ab + \bar{a}c\end{aligned}$$
+
+# Test Header 2
+lorem ipsum something something
+
+## Test Subheader 2
+This is math:
+
+$$\begin{matrix}
+x & y & z \\ 
+\hline 
+0 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \\ \hline \end{matrix}$$
+
+$$\begin{aligned}
+ab + \bar{a}c + bc &=  ab + \bar{a}c + (\bar{a}+a)bc\\
+&=ab + abc+ \bar{a}c + \bar{a}bc \\
+&= ab(1+c) + \bar{a}c (1+b)\\
+&=ab + \bar{a}c\end{aligned}$$
+
+# Test Header 2
+lorem ipsum something something
+
+## Test Subheader 2
+This is math:
+
+$$\begin{matrix}
+x & y & z \\ 
+\hline 
+0 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \\ \hline \end{matrix}$$
+
+$$\begin{aligned}
+ab + \bar{a}c + bc &=  ab + \bar{a}c + (\bar{a}+a)bc\\
+&=ab + abc+ \bar{a}c + \bar{a}bc \\
+&= ab(1+c) + \bar{a}c (1+b)\\
+&=ab + \bar{a}c\end{aligned}$$
+
 <br />
