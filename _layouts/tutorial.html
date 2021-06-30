@@ -84,13 +84,7 @@
 <body class="stackedit">
     <!-- {% include header.html %} -->
   <div class="stackedit__left">
-
-    {{ markdown-toc }}
-
-    <div class="stackedit__toc">
-        {{#tocToHtml :toc 2}}{{/tocToHtml}}
-      <!-- {{ content.toc 2}} -->
-    </div>
+    {{#tocToHtml :toc 2}}{{/tocToHtml}}
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
@@ -108,8 +102,8 @@
 <script>
 
 Handlebars.registerHelper('tocToHtml', (toc, depth = 6) => {
-
-let result = '<li>';
+let result = document.getElementById("markdown-toc").innerHTML
+let result = 'test';
   return new Handlebars.SafeString(result);
 });
 </script>
