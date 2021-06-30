@@ -2247,6 +2247,7 @@
   .stackedit__left {
     grid-column: 1;
     grid-row: 1;
+    align-self: start;
     display: none;
     position: sticky;
     position: -webkit-sticky;
