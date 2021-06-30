@@ -170,6 +170,8 @@ pre {
  * Wrapper
  */
 .wrapper {
+  grid-column: 1;
+  grid-row: 1;
   max-width: -webkit-calc(700px - (#{$spacing-unit} * 2));
   max-width:         calc(700px - (#{$spacing-unit} * 2));
   margin-right: auto;

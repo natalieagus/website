@@ -2248,15 +2248,12 @@
     grid-column: 1;
     grid-row: 1;
     position: sticky;
-    display: none;
     width: 250px;
     height: 100%;
     top: 0;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
     z-index: 100;
   }
   @media (min-width: 1060px) {
