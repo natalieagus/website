@@ -2244,7 +2244,7 @@
     display: none;
     width: 250px;
     height: 100%;
-    top: 0;
+    top: 30px;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
