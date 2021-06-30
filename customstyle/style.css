@@ -2240,14 +2240,11 @@
     border-radius: 3px;
   }
 
-  .content-container{
-    display: grid;
-    padding: 30px;
-  }
 
   .stackedit__left {
     grid-column: 1;
     grid-row: 1;
+    display: none;
     position: sticky;
     width: 250px;
     height: 100%;
