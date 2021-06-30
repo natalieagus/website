@@ -2240,11 +2240,11 @@
     border-radius: 3px;
   }
   .stackedit__left {
-    position: fixed;
+    position: sticky;
     display: none;
     width: 250px;
     height: 100%;
-    top: 100px;
+    top: 0;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
