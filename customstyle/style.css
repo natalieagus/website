@@ -2249,6 +2249,7 @@
     grid-row: 1;
     display: none;
     position: sticky;
+    position: -webkit-sticky;
     width: 250px;
     height: 100%;
     top: 20px;
