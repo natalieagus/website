@@ -83,15 +83,17 @@
 
 <body class="stackedit">
     <!-- {% include header.html %} -->
-  <div class="stackedit__left">
-    <script>
-        document.write(document.getElementById("markdown-toc").innerHTML);
-    </script>
-  </div>
+
   <div class="stackedit__right">
     <div class="stackedit__html">
       {{ content }}
     </div>
+  </div>
+
+  <div class="stackedit__left">
+    <script>
+        document.write(document.getElementById("markdown-toc").innerHTML);
+    </script>
   </div>
   <!-- {% include footer.html %} -->
       
