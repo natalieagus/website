@@ -65,7 +65,7 @@
         {% endif %}
       
         <link rel="stylesheet" href="{{ "/customstyle/style.css" | absolute_url }}" />
-        <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
+        <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/> -->
 
         <link rel="canonical" href="{{ page_url }}"/>
         <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
@@ -85,8 +85,8 @@
     <!-- {% include header.html %} -->
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      <!-- {{#tocToHtml content.toc 2}}{{/tocToHtml}} -->
-      {{ content.toc 2}}
+      {{#tocToHtml content.toc 2}}{{/tocToHtml}}
+      <!-- {{ content.toc 2}} -->
     </div>
   </div>
   <div class="stackedit__right">
