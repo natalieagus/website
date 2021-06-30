@@ -85,13 +85,11 @@
 
     {% include header.html %}
     <div style="display: grid;">
-    <div class="page-content">
-        <div class="wrapper">
-
-                  {{ content }}
+        <div class="page-content">
+            <div class="wrapper">
+                    {{ content }}
+            </div>
         </div>
-       
-    </div>
 
         <div class="stackedit__left">
             <div style="position: sticky; position: -webkit-sticky; top: 20px; align-self: start;">
@@ -104,19 +102,12 @@
             </div>
         </div>
         </div>    
-        <div class="page-content">
-            <div class="wrapper">
-    
-                      {{ content }}
-            </div>
-           
-        </div>
     </div>
     
 
-  <!-- {% include footer.html %} -->
+  {% include footer.html %}
       
-  <!-- {% include foot.html %} -->
+  {% include foot.html %}
 </body>
   
 

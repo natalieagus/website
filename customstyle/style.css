@@ -2247,17 +2247,12 @@
   .stackedit__left {
     grid-column: 1;
     grid-row: 1;
-    /* align-self: start; */
     display: none;
-    /* position: sticky;
-    position: -webkit-sticky; */
     width: 250px;
     height: 80%;
     top: 20px;
     left: 0;
     overflow: visible;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
     z-index: 100;
   }
   @media (min-width: 1060px) {
