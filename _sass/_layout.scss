@@ -157,6 +157,8 @@
  * Page content
  */
 .page-content {
+  grid-column: 1;
+  grid-row: 1;
   display: grid;
   padding: $spacing-unit 0;
   overflow: visible;
