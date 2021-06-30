@@ -2239,12 +2239,19 @@
     background-color: rgba(0, 0, 0, 0.075);
     border-radius: 3px;
   }
+
+  .container_row{
+    display: grid;
+  }
+
   .stackedit__left {
-    /* position: sticky; */
+    grid-column: 1;
+    grid-row: 1;
+    position: sticky;
     display: none;
     width: 250px;
     height: 100%;
-    top: 107px;
+    top: 0;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
