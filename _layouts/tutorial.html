@@ -239,64 +239,62 @@ border: 1px solid #FF8C00;
   overflow: hidden;
   background-color: #efffef;
 }
-</style>
-
 
 .site-nav {
 z-index: 10;
 float: right;
 line-height: 56px;
 
-.menu-icon {
-    display: none;
-}
-
-.page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the first one
-    &:not(:first-child) {
-    margin-left: 20px;
-    }
-}
-
-@include media-query($on-mobile) {
-    position: absolute;
-    top: 12px;
-    right: 24px;
-
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
     .menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 4px;
-    text-align: center;
-
-    background: #ffffff url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
-    background-size: 26px 26px;
-    }
-
-    .menu {
-    clear: both;
-    display: none;
-    background-color: #ffffff;
-    min-width: 10em;
-    padding-bottom: 5px;
+        display: none;
     }
 
     .page-link {
-    font-size: 16px;
-    display: block;
-    padding: 6px 16px;
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+        margin-left: 20px;
+        }
     }
-}
+
+    @include media-query($on-mobile) {
+        position: absolute;
+        top: 12px;
+        right: 24px;
+
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 4px;
+        text-align: center;
+
+        background: #ffffff url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
+        background-size: 26px 26px;
+        }
+
+        .menu {
+        clear: both;
+        display: none;
+        background-color: #ffffff;
+        min-width: 10em;
+        padding-bottom: 5px;
+        }
+
+        .page-link {
+        font-size: 16px;
+        display: block;
+        padding: 6px 16px;
+        }
+    }
 }
 
 .wrapper {
@@ -318,24 +316,26 @@ line-height: 56px;
     position: relative;
   }
 
-  .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    float: left;
-  
-    img {
-      height: 28px;
-    }
-  
-    &,
-    &:visited {
-      color: $grey-color-dark;
-    }
-  }
+.site-title {
+font-size: 26px;
+line-height: 56px;
+letter-spacing: -1px;
+float: left;
 
-  .page-content {
-    padding: $spacing-unit 0;
-  }
+img {
+    height: 28px;
+}
+
+&,
+&:visited {
+    color: $grey-color-dark;
+}
+}
+
+.page-content {
+padding: $spacing-unit 0;
+}
+
+</style>
   
 </html>
