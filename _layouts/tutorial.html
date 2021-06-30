@@ -108,23 +108,13 @@
 <script>
 
 Handlebars.registerHelper('tocToHtml', (toc, depth = 6) => {
-  function arrayToHtml(arr) {
-    if (!arr || !arr.length || arr[0].level > depth) {
-      return '';
-    }
-    const ulHtml = arr.map((item) => {
-      let result = '<li>';
-      if (item.anchor && item.title) {
-        result += `<a href="#${item.anchor}">${item.title}</a>`;
-      }
-      result += arrayToHtml(item.children);
-      return `${result}</li>`;
-    }).join('\n');
-    return `\n<ul>\n${ulHtml}\n</ul>\n`;
-  }
-  return new Handlebars.SafeString(arrayToHtml(toc));
+
+let result = '<li>';
+  return new Handlebars.SafeString(result);
 });
 </script>
+
+
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
