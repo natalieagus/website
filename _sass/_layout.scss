@@ -4,7 +4,7 @@
 .site-header {
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
-  overflow: visible;
+
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -159,6 +159,7 @@
 .page-content {
   display: grid;
   padding: $spacing-unit 0;
+  overflow: visible;
 }
 
 .page-heading {
