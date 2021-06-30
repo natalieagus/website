@@ -2240,7 +2240,7 @@
     border-radius: 3px;
   }
   .stackedit__left {
-    position: fixed;
+    position: sticky;
     display: none;
     width: 250px;
     height: 100%;
@@ -2250,6 +2250,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
+    z-index: 100;
   }
   @media (min-width: 1060px) {
     .stackedit__left {
