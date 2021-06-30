@@ -4,6 +4,8 @@
 .site-header {
   border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
+  
+  position: fixed;
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -12,9 +14,6 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  // Positioning context for the mobile navigation icon
-  position: fixed;
 }
 
 .site-title {
