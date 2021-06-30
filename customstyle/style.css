@@ -2254,8 +2254,9 @@
     height: 100%;
     top: 20px;
     left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: visible;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
     z-index: 100;
   }
   @media (min-width: 1060px) {
