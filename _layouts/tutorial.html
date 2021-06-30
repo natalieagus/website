@@ -85,7 +85,7 @@
     <!-- {% include header.html %} -->
   <div class="stackedit__left">
 
-    {{ content.toc }}
+    {{ :toc }}
 
     <div class="stackedit__toc">
         {{#tocToHtml :toc 2}}{{/tocToHtml}}
@@ -102,6 +102,30 @@
   <!-- {% include foot.html %} -->
 </body>
   
+
+
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script>
+
+Handlebars.registerHelper('tocToHtml', (toc, depth = 6) => {
+  function arrayToHtml(arr) {
+    if (!arr || !arr.length || arr[0].level > depth) {
+      return '';
+    }
+    const ulHtml = arr.map((item) => {
+      let result = '<li>';
+      if (item.anchor && item.title) {
+        result += `<a href="#${item.anchor}">${item.title}</a>`;
+      }
+      result += arrayToHtml(item.children);
+      return `${result}</li>`;
+    }).join('\n');
+    return `\n<ul>\n${ulHtml}\n</ul>\n`;
+  }
+  return new Handlebars.SafeString(arrayToHtml(toc));
+});
+</script>
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
