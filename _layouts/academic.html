@@ -4,7 +4,7 @@
 
   <body>
     {% include header.html %}
-    <link rel="stylesheet" href="{{ "/customstyle/style.css" | absolute_url }}" />
+    <!-- <link rel="stylesheet" href="{{ "/customstyle/style.css" | absolute_url }}" /> -->
     <div style="display: grid;">
         <div class="page-content">
             <div class="wrapper">
@@ -14,17 +14,20 @@
 
         <div class="stackedit__left">
             <div style="position: sticky; position: -webkit-sticky; top: 20px; align-self: start;">
-            <div class="stackedit__toc">
-                <ul>
-                    <script>
-                        document.write(document.getElementById("markdown-toc").innerHTML);
-                        document.getElementById("markdown-toc").style.display="none";
-                    </script>
-                </ul>
+                <div class="stackedit__toc">
+                    <ul>
+                        <script>
+                            document.write(document.getElementById("markdown-toc").innerHTML);
+                            document.getElementById("markdown-toc").style.display="none";
+                        </script>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>    
     </div>
+    {% include footer.html %}
+    
+    {% include foot.html %}
 </body>
 
 
